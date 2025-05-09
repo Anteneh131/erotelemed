@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ERO Telemed - Your Telemedicine Partner</title>
+  <style>
+    /* Variables */
+    :root {
+      --primary: #0057a3;
+      --secondary: #0288d1;
+      --accent: #28a745;
+      --bg: #f0f4f8;
+      --light: #fff;
+      --dark: #333;
+      --font: 'Segoe UI', sans-serif;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: var(--font); background: var(--bg); color: var(--dark); line-height:1.6; }
+    header { background: var(--primary); color: var(--light); padding:1rem 2rem; position:fixed; width:100%; top:0; z-index:1000; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { font-size:1.5rem; }
+    nav a { color: var(--light); margin-left:20px; text-decoration:none; font-weight:500; }
+    nav a:hover { text-decoration:underline; }
+    main { padding-top:4.5rem; }
+    .hero { background:var(--accent); color:var(--light); text-align:center; padding:4rem 1rem; }
+    .hero h2 { font-size:2.5rem; margin-bottom:1rem; }
+    .hero p { font-size:1.1rem; max-width:700px; margin:auto; }
+    section { padding:3rem 1rem; max-width:1000px; margin:auto; }
+    section h2 { color:var(--primary); margin-bottom:1rem; font-size:2rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
+    .card { background:var(--light); border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); padding:1.5rem; }
+    .card h3 { margin-bottom:0.5rem; color:var(--secondary); }
+    .buttons a { display:inline-block; margin:0.5rem; padding:0.8rem 1.2rem; background:var(--secondary); color:var(--light); text-decoration:none; border-radius:6px; font-weight:500; }
+    .buttons a:hover { background:var(--primary); }
+    .testimonial { border-left:4px solid var(--accent); padding-left:1rem; font-style:italic; }
+    .faq dt { font-weight:bold; margin-top:1rem; }
+    .faq dd { margin-left:1rem; margin-bottom:1rem; }
+    form { display:flex; flex-direction:column; } 
+    form label { margin-top:1rem; }
+    form input, form textarea { padding:0.8rem; border:1px solid #ccc; border-radius:4px; width:100%; }
+    form button { margin-top:1rem; padding:1rem; background:var(--accent); color:var(--light); border:none; border-radius:6px; font-size:1rem; cursor:pointer; }
+    form button:hover { background:green; }
+    footer { background:var(--primary); color:var(--light); text-align:center; padding:1rem; margin-top:2rem; }
+    @media(max-width:600px){ .hero h2{font-size:2rem;} }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ERO Telemed</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#features">Features</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <main>
+    <section id="home" class="hero">
+      <h2>Revolutionizing Rural Healthcare</h2>
+      <p>ERO Telemed brings quality medical care to remote areas via AI-driven chat, secure video calls, and comprehensive digital health records—all optimized for low-bandwidth environments.</p>
+      <div class="buttons">
+        <a href="#consultation">Start Consultation</a>
+        <a href="#contact">Get in Touch</a>
+      </div>
+    </section><section id="about">
+  <h2>About Us</h2>
+  <p>At ERO Telemed, our mission is to close the healthcare access gap in underserved regions. We empower health workers and patients with advanced digital tools that enable real-time consultations, AI support, and robust patient data management.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>AI Symptom Checker</h3>
+      <p>Get instant guidance with our chat-based AI that analyzes symptoms and provides recommendations.</p>
+    </div>
+    <div class="card">
+      <h3>Video Consultation</h3>
+      <p>Connect via Google Meet, Zoom, or Jitsi for secure, face-to-face telemedicine appointments.</p>
+    </div>
+    <div class="card">
+      <h3>Digital Health Records</h3>
+      <p>Access and update patient records anytime, with encrypted storage and audit logs.</p>
+    </div>
+    <div class="card">
+      <h3>Remote Monitoring</h3>
+      <p>Monitor vital signs and treatment progress with integrated reporting tools.</p>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <h2>Key Features</h2>
+  <ul>
+    <li>Multilingual Support: English, Amharic, and more</li>
+    <li>Low Bandwidth Mode for rural connections</li>
+    <li>Mobile-First Responsive Design</li>
+    <li>Secure, HIPAA-Compliant Communications</li>
+    <li>Customizable Templates for Triage & Nursing Notes</li>
+  </ul>
+</section>
+
+<section id="testimonials">
+  <h2>What Users Say</h2>
+  <div class="card testimonial">
+    "ERO Telemed enabled me to consult a specialist without traveling 200km—truly lifesaving!"<br>
+    <strong>- Nurse Alemu</strong>
+  </div>
+  <div class="card testimonial">
+    "The AI assistant helped triage patients quickly during the outbreak. Remarkable tool."<br>
+    <strong>- Dr. Bekele</strong>
+  </div>
+</section>
+
+<section id="faq">
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>How do I start a consultation?</dt>
+    <dd>Click "Start Consultation" or use the video links provided in the Services section.</dd>
+
+    <dt>Is my data secure?</dt>
+    <dd>Yes, all communications and records are encrypted end-to-end to ensure privacy.</dd>
+
+    <dt>Do I need a special app?</dt>
+    <dd>No app required—access the platform via any web browser on mobile or desktop.</dd>
+  </dl>
+</section>
+
+<section id="consultation">
+  <h2>Start a Video Consultation</h2>
+  <div class="buttons">
+    <a href="https://meet.google.com/new" target="_blank">Google Meet</a>
+    <a href="https://zoom.us/start/videomeeting" target="_blank">Zoom</a>
+    <a href="https://meet.jit.si/erotelemed" target="_blank">Jitsi Meet</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="mailto:antenehbenti1212@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="Name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="Message" rows="4" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+  <p style="margin-top:1rem;"><strong>Email:</strong> antenehbenti1212@gmail.com</p>
+  <p><strong>Phone:</strong> 0926198917</p>
+</section>
+
+  </main>  <footer>
+    &copy; 2025 ERO Telemed. All rights reserved.
+  </footer></body>
+</html>
